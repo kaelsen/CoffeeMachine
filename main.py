@@ -42,6 +42,7 @@ while power_on:
     if choice == "report":
         for key,value in resources.items():
             print(f"{key.title()}: {value}")
+        print(f"Money: ${profit}")
     elif choice == "off":
         power_on = False
     else:
