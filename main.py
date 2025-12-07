@@ -1,5 +1,6 @@
 from resource import MENU,resources
 
+profit = 0
 power_on = True
 
 def insert_coins(drink):
@@ -45,3 +46,4 @@ while power_on:
         power_on = False
     else:
         drink_select(choice)
+        profit += MENU[choice]["cost"]
